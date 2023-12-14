@@ -1,0 +1,7 @@
+[core]
+    remote = ssh-storage
+['remote "ssh-storage"']
+    url = ssh://data_srv2@192.168.56.104/home/data-srv2-admin/opt/datasets
+    password = 123
+    user = data-srv2-admin
+    port = 22
