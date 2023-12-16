@@ -9,7 +9,7 @@ if len(sys.argv) != 2:
 
 f_input = sys.argv[1]
 f_output = os.path.join("data", "stage1", "train.csv")
-os.makedirs(os.path.join("data", "stage1"), exit_ok=True)
+os.makedirs(os.path.join("data", "stage1"), exist_ok=True)
 
 def process_data(fd_in, fd_out):
     fd_in.readline()
@@ -17,7 +17,7 @@ def process_data(fd_in, fd_out):
         line = line.rstrip('\n').split(',')
         p_survived = line[1]
         p_pclass = line[2]
-        if line[3][0] = '"':
+        if line[3][0] == '"':
             p_sex = line[5]
             p_age = line[6]
         else:

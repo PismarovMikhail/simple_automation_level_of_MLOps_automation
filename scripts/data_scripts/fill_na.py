@@ -9,7 +9,7 @@ if len(sys.argv) != 2:
 
 f_input = sys.argv[1]
 f_output = os.path.join("data", "stage2", "train.csv")
-os.makedirs(os.path.join("data", "stage2"), exit_ok=True)
+os.makedirs(os.path.join("data", "stage2"), exist_ok=True)
 
 def process_data(fd_in, fd_out):
     arr_survived = []
