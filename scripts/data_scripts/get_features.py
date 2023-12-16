@@ -4,12 +4,12 @@ import io
 
 if len(sys.argv) != 2:
     sys.stderr.write("Arguments error. Usage:\n")
-    sys.stderr.write("\tpython get_features.py data-file\n")
+    sys.stderr.write("\tpython3 get_features.py data-file\n")
     sys.exit(1)
 
 f_input = sys.argv[1]
-f_output = os.path.join("datasets", "stage1", "train.csv")
-os.makedirs(os.path.join("datasets", "stage1"), exit_ok=True)
+f_output = os.path.join("data", "stage1", "train.csv")
+os.makedirs(os.path.join("data", "stage1"), exit_ok=True)
 
 def process_data(fd_in, fd_out):
     fd_in.readline()
