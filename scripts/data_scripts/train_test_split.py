@@ -13,9 +13,9 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 f_input = sys.argv[1]
-f_output = os.path.join("data", "stage4", "train.csv")
+f_output_train = os.path.join("data", "stage4", "train.csv")
 os.makedirs(os.path.join("data", "stage4"), exist_ok=True)
-f_output = os.path.join("data", "stage4", "test.csv")
+f_output_test = os.path.join("data", "stage4", "test.csv")
 os.makedirs(os.path.join("data", "stage4"), exist_ok=True)
 
 p_split_ratio = params["split_ratio"]
